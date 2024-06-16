@@ -168,13 +168,13 @@ These engagements reflect my dedication to sharing knowledge and promoting best 
       `,
         connect: `<h3 style="text-align: center;"><br>🔗🔒💻 Join Rootkid on social media to dive deeper into the world of cybersecurity. 🛡️🔐🔗<br></h3>
         <div class="social-icons">
-        <a href="https://medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
-        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://im-rootkid.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+        <a href="https://www.youtube.com/@im_rootkid" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:rootkid@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/im_rootkid" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/im_rootkid/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/im-rootkid/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:info.rootkid@rootkid.in"><i class="fas fa-envelope"></i></a>
       </div>
       `
       };
