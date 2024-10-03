@@ -1,44 +1,224 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>𝚁𝚘𝚘𝚝𝚔𝚒d - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rootkid - Portfolio</title>
+    <meta name="description" content="r00tless is a team composed of students and pentesters came from different countries in the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="_assets/wiresphere.concat.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100">
+    <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="manifest" href="/ico/manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 100%
+        }
+
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        @media (max-width:360px) and (max-width:411px) and (max-width:500px) and (max-width:600px) and (max-width:700px) {
+            .container {
+                padding-top: 1000px
+            }
+        }
+
+        body {
+            background-color: #1d1e22;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            overflow-y: hidden;
+            overflow-x: hidden
+        }
+
+        ::-webkit-scrollbar {
+            display: none
+        }
+    </style>
 </head>
+
 <body>
-  <div class="terminal">
-    <div class="header">
-      <div class="buttons">
-        <span class="close"></span>
-        <span class="minimize"></span>
-        <span class="maximize"></span>
-      </div>
-      <span class="title">𝚁𝚘𝚘𝚝𝚔𝚒𝚍@𝙺𝚎𝚛𝚗𝚎𝚕:~$</span>
+    <div class="preloader" id="preloader"> 
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 257.7 223.2" xml:space="preserve">
+            <g stroke-width="6">
+                <polygon class="st0" points="69.6,214.2 10.4,111.6 69.6,9 188.1,9 247.3,111.6 188.1,214.2 "/>
+                <line class="st0" x1="69.6" y1="9" x2="188.1" y2="214.2"/>
+                <line class="st0" x1="69.6" y1="214.2" x2="188.1" y2="9"/>
+                <line class="st0" x1="10.4" y1="111.6" x2="247.3" y2="111.6"/>
+            </g>
+        </svg>
     </div>
-    <div class="body" id="terminalBody">
-      <div id="output"></div>
-      <div class="input-area">
-        <span class="prompt">Rootkid@Kernel:~$</span>
-        <input type="text" id="commandInput" autofocus>
-      </div>
+    <div class="stage">
+        <div class="backgroundStack" id="backgroundStack">
+            <div class="backgroundStack-solidColor" id="backgroundStack-solidColor"></div>
+            <div class="backgroundStack-pic" id="backgroundStack-pic"></div> 
+            <canvas class="backgroundStack-gradient" id="backgroundStack-gradient"></canvas>
+            <div class="backgroundStack-3d" id="backgroundStack-3d"></div>
+            <div class="backgroundStack-noise" id="backgroundStack-noise"></div>
+        </div>
+        <div class="stage-header">
+            <h1>I'm RootKid</h1>
+            <h2 id="stage-header-tagline"> 
+                <span>Hacker</span>
+                <span>Red Teamer</span>
+                <span>Penetration Tester</span>
+                <span>Cyber Artist</span>
+                <span>Security Researcher</span>
+                <span>Cyber Ghost</span>
+            </h2>
+        </div>
+        <div id="redCountdown" class="redCountdown"></div>
+        <nav class="stage-nav" id="stage-nav">
+            <ul>
+                <li>
+                    <a class="nice-link" href="Rootkid-Terminal/terminal.html" data-page="activities">
+                        <div class="hover"><span></span><span></span><span></span><span></span></div><span>Rootkid Terminal</span></a>
+                </li>
+                <li>
+                    <a class="nice-link" href="#" data-page="about">
+                        <div class="hover"><span></span><span></span><span></span><span></span></div><span>About RootKid</span></a>
+                </li>
+                <li>
+                    <a class="nice-link" href="#" data-page="contact">
+                        <div class="hover"><span></span><span></span><span></span><span></span></div><span>Contact RootKid</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content-close" id="content-close">
+            <a class="nice-link" href="#">
+                <div class="hover"><span></span><span></span><span></span><span></span></div><span><i class="fa fa-angle-left"></i></span></a>
+        </div>
+        <div class="content" id="content">
+            <div class="wrapper">
+                <h2 class="content-title" id="content-title">About RootKid</h2>
+                <div class="content-content content-content--about" id="content-content--about">
+                    <div class="content-textwrapper" style="padding-top: 10px;">
+                        <h1>About RootKid</h1><br>
+
+                        <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="Rootkid.jpg">
+                        <p style="text-align:center;margin-top: 0px;margin-bottom: 0px;">I'm not a Hacker, I'm a Cyber Artist Creating Chaos with STYLE 😌</p><br>
+                        
+                        <p>Hey there! I’m <strong>Pavan Saxena</strong>, better known as <strong>RootKid</strong>—your friendly neighborhood cybersecurity enthusiast! 😅👋</p>
+                        <p>With over three years of hands-on experience in Vulnerability Assessment and Penetration Testing (VAPT), I’m passionate about diving deep into the world of cybersecurity. My journey began with a simple belief: in this fast-paced cyber landscape, skills trump theory any day. That’s why I focus on practical learning—because let's be honest, theory can be as useful as a chocolate teapot! 🍫☕️</p>
+                        <p>I’m also the co-founder of the <strong>Nest InfoSec Community</strong>, where my friend Kathan and I along with the team provide free resources to help aspiring professionals navigate the cybersecurity landscape.</p>
+                        <h2>Here’s a quick snapshot of my journey:</h2>
+                        <h3>Professional Experience:</h3>
+                        <ul>
+                            <li><strong>Lead Security Analyst (VAPT) at TechDefence Labs</strong><br> Leading a team of 17+ in comprehensive security assessments and ensuring high-quality delivery of technical reports.</li>
+                            <li><strong>Security Analyst (VAPT) at TechDefence Labs</strong><br> Conducted assessments across various platforms, managed client relationships, and prepared detailed reports while training interns.</li>
+                            <li><strong>Application Security Analyst at Adani Enterprises Limited</strong><br> Served as an Associate Application Security Engineer, focusing on application security practices and vulnerability management.</li>
+                            <li><strong>Freelance Security Researcher</strong><br> Reported over 400 vulnerabilities in government domains, receiving accolades for my contributions.</li>
+                        </ul>
+                        <h3>Certifications:</h3>
+                        <ul>
+                            <li>Certified Ethical Hacker (C|EH v12) by EC-Council</li>
+                            <li>eLearnSecurity Junior Penetration Tester v2 (eJPT v2) by INE</li>
+                            <li>Certified Network Security Practitioner (CNSP) by The SecOps Group</li>
+                            <li>Microsoft Azure Fundamentals (AZ-900) by Microsoft</li>
+                            <li>Certified in Cybersecurity (CC) by (ISC)²</li>
+                            <li>Certified AppSec Practitioner (CAP) by The SecOps Group</li>
+                            <li>Mobile Application Penetration Testing by TCM Security</li>
+                        </ul>
+                        <h3>Key Achievements:</h3>
+                        <ul>
+                            <li>Reported over 400 vulnerabilities to government domains, earning recognition from organizations like NCIIPC India and IOM UN-Migration.</li>
+                            <li>Presented as a keynote speaker at various cybersecurity events, covering topics such as:
+                                <ul>
+                                    <li>HTTP Request Smuggling</li>
+                                    <li>Android and iOS Application Penetration Testing</li>
+                                    <li>Kali Linux and Wireless Hacking</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>When I’m not busy with security assessments or mentoring, you can find me cooking up hands-on labs or engaging with the community to spread cyber wisdom.</p>
+                        <p>So, let’s keep it fun, keep it secure, and remember: if it’s smart, it’s vulnerable!</p>
+                        <p>🔐 Happy Hacking, Everyone! 👨‍💻🤖</p>
+                    </div>
+
+                    <p style="text-align:center;margin-top: 0px;margin-bottom: 0px;">All rights reserved © 2024</p>
+
+                </div>
+                <div class="content-content content-content--contact" id="content-content--contact">
+                    <div class="contact-map" id="contact-map"> </div>
+                    <ul class="contact-grid">
+                        <li>
+                            <div class="wrapper"> <i class="fab fa-github fa-3x"></i>
+                                <div>
+                                    <h3>GitHub</h3>
+                                    <h3> <a style="color:white ; text-decoration: none; " href="https://github.com/im-rootkid" target="_blank" rel="noopener noreferrer">Connect with me on GitHub</a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper"> <i class="fab fa-linkedin fa-3x"></i>
+                                <div>
+                                    <h3>Linkedin</h3>
+                                    <h3> <a style="color:white ; text-decoration: none; " href="https://www.linkedin.com/in/im-rootkid/" target="_blank" rel="noopener noreferrer">Connect with me on Linkedin</a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper"> <i class="fas fa-blog fa-3x"></i>
+                                <div>
+                                    <h3>RootKid Blogs</h3>
+                                    <h3> <a style="color:white ; text-decoration: none; " href="https://blog.rootkid.in/" target="_blank" rel="noopener noreferrer">Explore My Latest Blogs</a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrapper"><i class="fa fa-paper-plane fa-3x"></i>
+                                <div>
+                                    <h3>RootKid Email</h3><span>info.pavansaxena@gmail.com</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-    <p>𝙸𝚖-𝚁𝚘𝚘𝚝𝙺𝚒𝚍<br>
-       I'm not a Hacker, I'm a Cyber Artist Creating Chaos with STYLE 😌    
-       <div class="social-icons">
-        <a href="https://im-rootkid.medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
-        <a href="https://github.com/im-rootkid" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.youtube.com/@im_rootkid" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://twitter.com/im_rootkid" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/im_rootkid/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/im-rootkid/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:info.rootkid@rootkid.in"><i class="fas fa-envelope"></i></a>
-      </div>
-    </p>
+    <div class="col-md-6">
+        <script src="_assets/jquery-2.2.4.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="config.js"></script>
+        <script src="_assets/wiresphere.concat.min.js"></script>
+        <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+            <iframe frameborder="0" height="100%" width="100%" src="https://youtube.com/embed/yn9PzR_keeA?autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
+        </div>
     </div>
-  </div>
-  <script src="scripts.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,154 @@
+body {
+    background: url('bg_img.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 1000px;
+    border: 5px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    backdrop-filter: blur(10px); /* Add blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #00ff00;
+}
+
+.header .buttons {
+    display: flex;
+}
+
+.header .buttons span {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.header .buttons .close {
+    background-color: #ff5f56;
+}
+
+.header .buttons .minimize {
+    background-color: #ffbd2e;
+}
+
+.header .buttons .maximize {
+    background-color: #27c93f;
+}
+
+.header .title {
+    color: #00ff00;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.body {
+    padding: 20px;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+#commandInput {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1px;
+    border-top: 1px solid #00ff00;
+    font-size: 19px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.command-output {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+}
+
+.command-output pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.link {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+#promptMessage {
+    color: #ff6600;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.social-icons a:hover {
+    color: #00ff00;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 24px;
+    color: #0f0;
+}
+
+@media only screen and (max-width: 600px) {
+    .social-icons a {
+        margin: 5px;
+    }
+}
